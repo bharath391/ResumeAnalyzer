@@ -6,14 +6,14 @@ import werkzeug.utils
 from werkzeug.utils import secure_filename
 from resume_parser import extract_text_from_resume, parse_resume
 from job_recommender import get_job_recommendations
-from chatgpt_service import generate_chatgpt_response, is_api_key_valid
+from ollama_service import generate_ollama_response as generate_chatgpt_response
 
 # Configure logging
 logging.basicConfig(level=logging.DEBUG)
 
 # Create Flask app
 app = Flask(__name__)
-app.secret_key = os.environ.get("SESSION_SECRET", "default-dev-secret-key")
+app.secret_key = "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" 
 
 # Configure upload folder
 UPLOAD_FOLDER = os.path.join(os.getcwd(), 'uploads')
@@ -135,13 +135,6 @@ def chat():
         if not data or 'query' not in data:
             return jsonify({'error': 'No query provided'}), 400
         
-        # We don't need to check API validity anymore since we have fallback responses
-        # if not is_api_key_valid():
-        #     return jsonify({
-        #         'response': "I'm sorry, but the ChatGPT service is not available at the moment. "
-        #                     "Please try again later or contact support for assistance."
-        #     })
-        
         # Get the query from the request
         query = data['query']
         
@@ -166,7 +159,7 @@ def chat():
                 except (ValueError, IndexError) as e:
                     logging.error(f"Error processing job index: {str(e)}")
         
-        # Generate response using ChatGPT
+        # Generate response using Ollama
         response = generate_chatgpt_response(query, context)
         
         # Create response with CORS headers
