@@ -10,3 +10,19 @@ OpenAi GPT-3 - chat section (analysis result fed to chatgpt)
 
 Hosted @ : 
 https://ml-project-lsws.onrender.com/
+
+
+Demo :
+Home page->
+![image](https://github.com/user-attachments/assets/fc62fc98-57c9-499c-aa3c-9150ebcacf41)
+
+![image](https://github.com/user-attachments/assets/5b0ca768-9ee5-4aef-8035-dc6a569712e1)
+
+![image](https://github.com/user-attachments/assets/b0b7d942-feae-4c99-9dd7-a441bc8ba746)
+
+![image](https://github.com/user-attachments/assets/5c4ef2da-35d6-4ba3-b2bc-b5767cd19251)
+
+![image](https://github.com/user-attachments/assets/cd3668b7-3365-4dbe-872f-02bf354851a4)
+
+![image](https://github.com/user-attachments/assets/2669dc7b-ec79-4cb4-a983-d458dbd5cd54)
+
