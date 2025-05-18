@@ -5,7 +5,7 @@ This application will analyze your resume and helps you understand which job cat
 Further you can know about skills that you are missing for particular job types and interacting with the chat helps you to know more about the skills you should focus basd on your goals !
 
 LLM's used :
-BERT MODEL  - for resume analysis
+BERT MODEL  - for resume analysis , 
 OpenAi GPT-3 - chat section (analysis result fed to chatgpt)
 
 Hosted @ : 
