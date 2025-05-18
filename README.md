@@ -10,7 +10,8 @@ OpenAi GPT-3 - chat section (analysis result fed to chatgpt)
 
 Hosted @ : 
 https://ml-project-lsws.onrender.com/
-
+Based Model : https://drive.google.com/file/d/1ZufJuVVCpEphdGq7OQlm7BWuwn2HZQh4/view?usp=sharing
+Dataset : https://docs.google.com/spreadsheets/d/129YLtJLACrvHRVLkgjnZ9W9NHvFsCAP2/edit?usp=sharing&ouid=100460940194048723398&rtpof=true&sd=true
 
 Demo :
 Home page->
